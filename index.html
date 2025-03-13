@@ -98,7 +98,10 @@
                     </div>
                 </div>
             </nav> -->
-            <div class="container-fluid" id="mainContent"></div>
+            <div class="container-fluid" id="mainContent">
+                <!-- On page load, immediately GET home.html and replace this div with its contents. -->
+                <div hx-get="/home.html" hx-trigger="load" hx-swap="outerHTML"></div>
+            </div>
         </main>
 
         <!-- TODO move htmx to head? -->
