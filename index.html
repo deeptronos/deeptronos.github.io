@@ -13,12 +13,13 @@
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous"
         />
-        <link href="res/css/style.css"/>
+
         <script src="res/js/htmx.min.js"></script>
         <meta name="htmx-config" content='{"selfRequestsOnly": false}' />
+        <link rel="stylesheet" href="res/css/style.css"/>
     </head>
     <body>
-        <main>
+        <main id="mainPage">
             <!-- HTMX navbar :3 -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
@@ -40,7 +41,7 @@
                     >
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <button class="nav-link active" aria-current="page" hx-get="/home.html" hx-trigger="click" hx-target="#mainContent" hx-swap="inner-html">Home</button>
+                                <button class="nav-link active" aria-current="page" hx-get="home.html" hx-trigger="click" hx-target="#mainContent" hx-swap="inner-html">Home</button>
                                 <!-- <a
                                     class="nav-link active"
                                     aria-current="page"
@@ -49,17 +50,17 @@
                                 > -->
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link" hx-get="/about.html" hx-trigger="click" hx-target="#mainContent" hx-swap="inner-html">About</button>
+                                <button class="nav-link" hx-get="about.html" hx-trigger="click" hx-target="#mainContent" hx-swap="inner-html">About</button>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link" hx-get="/projects.html" hx-trigger="click" hx-target="#mainContent" hx-swap="inner-html">Projects</button>
+                                <button class="nav-link" hx-get="projects.html" hx-trigger="click" hx-target="#mainContent" hx-swap="inner-html">Projects</button>
 
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link" hx-get="/previous_work.html" hx-trigger="click" hx-target="#mainContent" hx-swap="inner-html">Previous Work</button>
+                                <button class="nav-link" hx-get="previous_work.html" hx-trigger="click" hx-target="#mainContent" hx-swap="inner-html">Previous Work</button>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link" hx-get="/contact.html" hx-trigger="click" hx-target="#mainContent" hx-swap="inner-html">Contact</button>
+                                <button class="nav-link" hx-get="contact.html" hx-trigger="click" hx-target="#mainContent" hx-swap="inner-html">Contact</button>
                             </li>
 
                     </div>
@@ -68,8 +69,13 @@
 
             <div class="container-fluid" id="mainContent">
                 <!-- On page load, immediately GET home.html and replace this div with its contents. -->
-                <div hx-get="/home.html" hx-trigger="load" hx-swap="outerHTML"></div>
+                <div hx-get="home.html" hx-trigger="load" hx-swap="outerHTML"></div>
             </div>
+
+            <!-- <footer class="container-fluid mt-auto position-absolute bottom-0">
+                Footer :D
+            </footer> -->
+
         </main>
 
         <!-- TODO move htmx to head? -->
@@ -79,7 +85,7 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"
         ></script>
-        <script
-            src="res/js/script.js"></script>
+        <script src="res/js/script.js"></script>
+
     </body>
 </html>

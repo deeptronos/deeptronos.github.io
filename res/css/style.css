@@ -1,3 +1,14 @@
 /* body {
     background-color: blue;
 } */
+:root {
+    /*Neopolitan defines*/
+    --light: pink;
+    --regular: white;
+    --dark: brown;
+}
+
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+}
