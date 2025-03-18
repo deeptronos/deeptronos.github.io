@@ -28,11 +28,6 @@ body {
     color: var(--darkdark);
 }
 
-/* .nav-link:focus,
-.nav-link:hover {
-    color: var(--dark);
-} */
-
 .card,
 .card-body {
     background: var(--lightlight);
