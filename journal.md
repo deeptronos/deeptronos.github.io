@@ -1,4 +1,8 @@
 # Work Journal
+
+Repo URL: https://github.com/deeptronos/deeptronos.github.io/tree/main
+Live site URL: https://deeptronos.github.io/
+
 ## Day 1
 Today, I outlined the general design of my site. Since we've had a few assignments in CS463 that are similar to this one, I'm going to distinguish this project from the work we did in class by using the HTMX library. I chose to use HTMX because it seems very powerful. While this static site project won't use HTMX for its most powerful features (websockets, frontend interaction with a server backend, etc.) since this is a simple portfolio, I want to become familiar with the library, and I think that some of the fundamental principles of hypermedia that HTMX implements are going to be applicable here.
 
