@@ -12,3 +12,7 @@ footer {
     background-color: var(--dark);
     color: var(--light);
 }
+
+.project-icon {
+    font-size: 4rem;
+}
