@@ -3,13 +3,43 @@
 } */
 :root {
     /*Neopolitan defines*/
-    --light: pink;
-    --regular: white;
-    --dark: brown;
+    --lightlight: #fdaeae;
+    --light: #ff8daa;
+    --regular: #f6e2b3;
+    --dark: #5535291;
+    --darkdark: #4a321d;
 }
 
-footer {
-    background-color: var(--dark);
+:root,
+[data-bs-theme="light"] {
+    --bs-primary: #ff0000;
+    --bs-primary-rgb: 255, 0, 0;
+}
+
+body {
+    color: var(--darkdark);
+    background-color: var(--regular);
+}
+
+.navbar-brand,
+.navbar,
+.nav-link {
+    background-color: var(--lightlight);
+    color: var(--darkdark);
+}
+
+/* .nav-link:focus,
+.nav-link:hover {
+    color: var(--dark);
+} */
+
+.card,
+.card-body {
+    background: var(--lightlight);
+    color: var(--darkdark);
+}
+.btn-project {
+    background: var(--darkdark);
     color: var(--light);
 }
 
