@@ -2,6 +2,5 @@
 ----
 Catherine Nemec 2025
 
-# Plan:
-1. Index: a html page with navbar, empty content element, and footer
-2. htmx-swap the selected page's content into the content element, as user navigates through pages via navbar
+## Note: 
+I was unable to submit my video presentation through Canvas, so here's the link: https://drive.google.com/file/d/10aHC6u7jjz1bygZWWZ7tHXNe_86z0N1U/view?usp=sharing
